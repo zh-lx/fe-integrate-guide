@@ -15,6 +15,6 @@ module.exports = {
   },
   plugins: ['@typescript-eslint'],
   rules: {
-    'prettier/prettier': ['error', { singleQuote: true, parser: 'flow' }],
+    'prettier/prettier': 'error',
   },
 };
