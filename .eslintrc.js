@@ -2,6 +2,8 @@ module.exports = {
   env: {
     browser: true,
     es2021: true,
+    commonjs: true,
+    mocha: true,
   },
   extends: [
     'eslint:recommended',
@@ -16,5 +18,6 @@ module.exports = {
   plugins: ['@typescript-eslint'],
   rules: {
     'prettier/prettier': 'error',
+    '@typescript-eslint/no-var-requires': 0,
   },
 };
