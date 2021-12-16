@@ -1,0 +1,15 @@
+language: node_js
+sudo: false
+
+cache:
+  apt: true
+  directories:
+    - node_modules # 对 node_modules 文件夹开启缓存以便更快安装依赖
+
+node_js: stable # 设置相应版本
+
+install:
+  - npm install -D # 安装依赖
+
+script:
+  - npm run test:cover
